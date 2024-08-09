@@ -16,7 +16,7 @@ debug = true
 
 [features]
 default = []
-jemalloc_shim = [ "tikv-jemalloc-sys" ]
+jemalloc_shim = ["dep:tikv-jemalloc-sys"]
 enable_heap_profiler = [ "jemalloc_shim" ]
 measure_free = []
 
